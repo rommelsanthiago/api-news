@@ -116,7 +116,7 @@ export class NewsController {
 
     getNewsKeywords = async (req: Request, res: Response) => {
         try {
-            const { q } = req.params;
+            const { q } = req.body;
             let result;
             
             await axios.get(`${BASE_URL}q=${q}&apiKey=${process.env.API_KEY}`).then((res) => {

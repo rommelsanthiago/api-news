@@ -14,4 +14,4 @@ router.get('/category/:category', newsController.getNewsCategory);
 
 router.get('/country/:country/category/:category', newsController.getNewsCategoryAndCountry);
 
-router.get('/keywords/:q', newsController.getNewsKeywords);
+router.get('/keywords', newsController.getNewsKeywords);
