@@ -33,3 +33,28 @@ Exemplo:
    }
  ```
  recebe noticias que tenha uma frase ou uma palavra-chave referente a spacex
+
+
+## Intalação
+Clone o repositorio
+
+`git clone https://github.com/rommelsanthiago/api-news.git`
+
+Instale as dependencias
+
+```npm install```
+
+Adicione a variavel de ambiente no seu aquivo `.env` na raiz do projeto
+
+```API_KEY = *************```
+
+Rode o projeto
+
+`npm run dev`
+
+## 🧑🏾‍💻 Autor
+### Rommel Santhiago
+
+### https://www.linkedin.com/in/rommelsanthiago
+
+### rommel.santhiago@gmail.com
