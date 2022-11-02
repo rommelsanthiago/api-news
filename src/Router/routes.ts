@@ -1,7 +1,9 @@
 import { Router } from "express";
 
+import { NewsController } from "../controllers/NewsController";
+
 export const router = Router();
 
-router.get('/', (req, res, next) => {
-    res.json({message: "Tudo ok por aqui!"});
-})
+const newsController = new NewsController();
+
+router.get('/', newsController.getAllNews);
