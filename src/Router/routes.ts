@@ -8,4 +8,8 @@ const newsController = new NewsController();
 
 router.get('/', newsController.getAllNews);
 
-router.get('/:country', newsController.getNewsCountry);
+router.get('/country/:country', newsController.getNewsCountry);
+
+router.get('/category/:category', newsController.getNewsCategory);
+
+router.get('/country/:country/category/:category', newsController.getNewsCategoryAndCountry);
